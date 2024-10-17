@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter to Bluesky Redirector",
+  "version": "1.0",
+  "description": "Redirects Twitter/X to Bluesky",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://x.com/*",
+    "*://twitter.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
